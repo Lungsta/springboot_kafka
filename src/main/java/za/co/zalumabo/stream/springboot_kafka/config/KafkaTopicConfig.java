@@ -11,4 +11,9 @@ public class KafkaTopicConfig {
     public NewTopic kafkaTopic() {
         return new NewTopic("za.co.zalumabo.stream.springboot_kafka.topic", 3, (short) 1);
     }
+
+    @Bean
+    public NewTopic kafkaJsonTopic() {
+        return new NewTopic("za.co.zalumabo.stream.springboot_kafka.jason_topic", 3, (short) 1);
+    }
 }

@@ -19,6 +19,6 @@ public class JsonKafkaProducer {
 
     public void send(User user) {
         LOGGER.info("Sending user to kafka: {}", user.toString());
-        KAFKA_TEMPLATE.send("za.co.zalumabo.stream.springboot_kafka.topic", user);
+        KAFKA_TEMPLATE.send("za.co.zalumabo.stream.springboot_kafka.json_topic", user);
     }
 }
